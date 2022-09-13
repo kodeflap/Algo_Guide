@@ -12,12 +12,13 @@ class InsertionSortViewModel(
 
     var arr = mutableStateOf(
         intArrayOf(
-            10, 20, 30, 1, 54, 4354
+            10, 20, 30, 1, 54, 43, 4, 43, 1, 5, 43, 56, 13, 23, 78,
+            3, 6, 57, 8, 86, 45, 75, 55, 56
         )
     )
     val insertionSortingStart = mutableStateOf(false)
     val insertionSortFinish = mutableStateOf(false)
-    private var sortDelay = 300L
+    private var sortDelay = 150L
     private var pause = false
     private var next = 1
     private var previous = 0
@@ -65,7 +66,7 @@ class InsertionSortViewModel(
 
     private fun previouss() {
         if (previous >= 0) {
-            arr.value = insertionSortLevels[next].toIntArray()
+            arr.value = insertionSortLevels[previous].toIntArray()
             next--
             previous--
 
@@ -95,12 +96,12 @@ class InsertionSortViewModel(
     private fun play() = viewModelScope.launch{
 
         pause = false
-        for (i in sortingState..insertionSortLevels.size) {
-            if(!pause) {
+        for (i in sortingState until insertionSortLevels.size) {
+            if (!pause) {
                 delay(sortDelay)
                 arr.value = insertionSortLevels[i].toIntArray()
             } else {
-                sortingState = 1
+                sortingState = i
                 next = i + 1
                 previous = i
                 return@launch

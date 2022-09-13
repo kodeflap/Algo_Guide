@@ -33,14 +33,15 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Box(
                     modifier = Modifier
-                        .fillMaxSize()
+                        .fillMaxWidth()
+                        .fillMaxHeight()
                         .background(MaterialTheme.colors.background),
                     contentAlignment = Alignment.BottomCenter
                 ) {
                     Column {
                         VisualizerSection(
                             arr = viewModel.arr.value,
-                            modifier = Modifier.fillMaxWidth()
+                            modifier = Modifier
                         )
 
                         val isPlaying = viewModel.insertionSortingStart.value
@@ -54,7 +55,7 @@ class MainActivity : ComponentActivity() {
                             nextClick = { viewModel.onEvent(Events.next) },
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .height(70.dp),
+                                .height(75.dp),
                             isPlaying = if (isFinished) !isFinished else isPlaying
                         )
                     }

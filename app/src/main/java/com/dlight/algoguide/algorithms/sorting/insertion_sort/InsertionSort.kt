@@ -10,7 +10,7 @@ class InsertionSort {
         arr: IntArray,
         swap: (IntArray) -> Unit
     ) {
-        for (i in 1..arr.size)
+        for (i in 1 until arr.size)
         {
             val key = arr[i - 1]
             var j = i - 1
