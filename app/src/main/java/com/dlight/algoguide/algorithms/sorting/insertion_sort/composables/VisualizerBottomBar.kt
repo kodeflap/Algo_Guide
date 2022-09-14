@@ -19,7 +19,7 @@ import androidx.compose.ui.res.painterResource
 import com.dlight.algoguide.R
 
 @Composable
-fun Visualizer(
+fun VisualizerBottomBar(
     modifier: Modifier = Modifier,
     playPauseClick: () -> Unit,
     slowDownClick: () -> Unit,

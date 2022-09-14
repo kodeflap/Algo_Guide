@@ -12,13 +12,12 @@ class InsertionSortViewModel(
 
     var arr = mutableStateOf(
         intArrayOf(
-            10, 20, 30, 1, 54, 43, 4, 43, 1, 5, 43, 56, 13, 23, 78,
-            3, 6, 57, 8, 86, 45, 75, 55, 56
+            345, 167, 188, 276, 123, 375, 180, 120,240, 37, 173, 156
         )
     )
     val insertionSortingStart = mutableStateOf(false)
     val insertionSortFinish = mutableStateOf(false)
-    private var sortDelay = 150L
+    private var sortDelay = 300L
     private var pause = false
     private var next = 1
     private var previous = 0

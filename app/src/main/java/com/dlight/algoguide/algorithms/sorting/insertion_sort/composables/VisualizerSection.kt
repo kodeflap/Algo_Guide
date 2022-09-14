@@ -7,7 +7,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 @Composable
@@ -15,16 +14,19 @@ fun VisualizerSection(
     modifier: Modifier = Modifier,
     arr: IntArray
 ) {
-    BoxWithConstraints(modifier = modifier) {
+    BoxWithConstraints(
+        modifier = modifier.fillMaxWidth(),
+        contentAlignment = Alignment.BottomCenter
+    ) {
         val maxHeight = maxHeight - 75.dp
         val itemWidth = remember {
-            maxWidth / arr.size - 8.dp
+            maxWidth / arr.size - 2.dp
         }
 
         Row(
             modifier = modifier,
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.Bottom
+            horizontalArrangement = Arrangement.SpaceEvenly,
+            verticalAlignment = Alignment.Bottom,
         ) {
             arr.forEach {
                 Box(

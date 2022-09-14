@@ -10,18 +10,23 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModelProvider
-import com.dlight.algoguide.algorithms.sorting.insertion_sort.AlgoithmViewModelProvider
+import com.dlight.algoguide.algorithms.sorting.insertion_sort.AlgorithmViewModelProvider
 import com.dlight.algoguide.algorithms.sorting.insertion_sort.Events
 import com.dlight.algoguide.algorithms.sorting.insertion_sort.InsertionSort
 import com.dlight.algoguide.algorithms.sorting.insertion_sort.InsertionSortViewModel
-import com.dlight.algoguide.algorithms.sorting.insertion_sort.composables.Visualizer
+import com.dlight.algoguide.algorithms.sorting.insertion_sort.composables.VisualizerBottomBar
 import com.dlight.algoguide.algorithms.sorting.insertion_sort.composables.VisualizerSection
 import com.dlight.algoguide.ui.theme.AlgoGuideTheme
 
+/**
+ * Main activity
+ *
+ * @constructor Create empty Main activity
+ */
 class MainActivity : ComponentActivity() {
 
     private val viewModel: InsertionSortViewModel by lazy {
-        val viewModelProviderFactory = AlgoithmViewModelProvider(InsertionSort())
+        val viewModelProviderFactory = AlgorithmViewModelProvider(InsertionSort())
         ViewModelProvider(this, viewModelProviderFactory)[
                 InsertionSortViewModel::class.java]
     }
@@ -33,8 +38,7 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Box(
                     modifier = Modifier
-                        .fillMaxWidth()
-                        .fillMaxHeight()
+                        .fillMaxSize()
                         .background(MaterialTheme.colors.background),
                     contentAlignment = Alignment.BottomCenter
                 ) {
@@ -47,7 +51,7 @@ class MainActivity : ComponentActivity() {
                         val isPlaying = viewModel.insertionSortingStart.value
                         val isFinished = viewModel.insertionSortFinish.value
 
-                        Visualizer(
+                        VisualizerBottomBar(
                             playPauseClick = { viewModel.onEvent(Events.playPause) },
                             slowDownClick = { viewModel.onEvent(Events.slowDown) },
                             speedUpClick = { viewModel.onEvent(Events.speedUp) },
