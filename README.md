@@ -4,7 +4,11 @@ Android application to visualize algorithms
 # Project Status 
 Project in progress
 
-[![video]()](https://user-images.githubusercontent.com/86681482/190230717-b7704fb9-ec07-49cb-b701-7d2858b2d1b8.mp4)
+[![video]()](https://user-images.githubusercontent.com/86681482/190232283-341e0b91-ee90-4af8-894d-78208aae3a22.mp4)
+
+
+
+
 
 # To do
 
