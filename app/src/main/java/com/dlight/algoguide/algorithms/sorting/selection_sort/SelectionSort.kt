@@ -1,5 +1,11 @@
 package com.dlight.algoguide.algorithms.sorting.selection_sort
 
+/**
+ * Selection sort
+ *
+ * @constructor Create empty Selection sort
+ */
+
 class SelectionSort {
     suspend fun selectionSort(
         arr: IntArray,

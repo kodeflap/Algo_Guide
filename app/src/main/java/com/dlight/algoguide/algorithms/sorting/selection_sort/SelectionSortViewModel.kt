@@ -7,6 +7,13 @@ import com.dlight.algoguide.algorithms.sorting.Events
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+/**
+ * Selection sort view model
+ *
+ * @property selectionSort
+ * @constructor Create empty Selection sort view model
+ */
+
 class SelectionSortViewModel (
     private val selectionSort: SelectionSort
 ) : ViewModel() {
@@ -29,7 +36,7 @@ class SelectionSortViewModel (
         viewModelScope.launch {
             selectionSort.selectionSort(
                 arr.value.clone()
-            ) 
+            )
         }
     }
 
