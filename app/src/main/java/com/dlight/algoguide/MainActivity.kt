@@ -10,8 +10,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModelProvider
-import com.dlight.algoguide.algorithms.sorting.insertion_sort.AlgorithmViewModelProvider
-import com.dlight.algoguide.algorithms.sorting.insertion_sort.Events
+import com.dlight.algoguide.algorithms.sorting.SortingViewModelProvider
+import com.dlight.algoguide.algorithms.sorting.Events
 import com.dlight.algoguide.algorithms.sorting.insertion_sort.InsertionSort
 import com.dlight.algoguide.algorithms.sorting.insertion_sort.InsertionSortViewModel
 import com.dlight.algoguide.algorithms.sorting.insertion_sort.composables.VisualizerBottomBar
@@ -26,7 +26,7 @@ import com.dlight.algoguide.ui.theme.AlgoGuideTheme
 class MainActivity : ComponentActivity() {
 
     private val viewModel: InsertionSortViewModel by lazy {
-        val viewModelProviderFactory = AlgorithmViewModelProvider(InsertionSort())
+        val viewModelProviderFactory = SortingViewModelProvider(InsertionSort())
         ViewModelProvider(this, viewModelProviderFactory)[
                 InsertionSortViewModel::class.java]
     }

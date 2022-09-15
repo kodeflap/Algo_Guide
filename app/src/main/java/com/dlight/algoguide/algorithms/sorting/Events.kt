@@ -1,9 +1,9 @@
-package com.dlight.algoguide.algorithms.sorting.insertion_sort
+package com.dlight.algoguide.algorithms.sorting
 
 sealed class Events {
+    object speedUp : Events()
     object slowDown : Events()
     object playPause : Events()
-    object speedUp : Events()
     object previous : Events()
     object next : Events()
 }
