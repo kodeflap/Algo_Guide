@@ -25,6 +25,11 @@ Project in progress
 - [ ] Radix sort
 - [ ] Bucket sort
 
+# Tech Stack
+
+- Kotlin
+- Jetpack compose
+
 # LICENSE
 
 [Apache license](LICENSE)
