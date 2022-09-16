@@ -1,4 +1,4 @@
-package com.dlight.algoguide.algorithms.sorting.insertion_sort.composables
+package com.dlight.algoguide.algorithms.sorting.composables
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*

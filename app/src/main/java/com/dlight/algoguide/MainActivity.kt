@@ -14,8 +14,8 @@ import com.dlight.algoguide.algorithms.sorting.SortingViewModelProvider
 import com.dlight.algoguide.algorithms.sorting.Events
 import com.dlight.algoguide.algorithms.sorting.insertion_sort.InsertionSort
 import com.dlight.algoguide.algorithms.sorting.insertion_sort.InsertionSortViewModel
-import com.dlight.algoguide.algorithms.sorting.insertion_sort.composables.VisualizerBottomBar
-import com.dlight.algoguide.algorithms.sorting.insertion_sort.composables.VisualizerSection
+import com.dlight.algoguide.algorithms.sorting.composables.VisualizerBottomBar
+import com.dlight.algoguide.algorithms.sorting.composables.VisualizerSection
 import com.dlight.algoguide.ui.theme.AlgoGuideTheme
 
 /**

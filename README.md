@@ -15,8 +15,8 @@ Project in progress
 ## Week 1
 
 - [x] Insertion sort
-- [ ] Selection Sort
-- [ ] Quick Sort
+- [x] Selection Sort
+- [x] Quick Sort
 - [ ] Selection sort
 - [ ] Bubble sort
 - [ ] Merge sort
