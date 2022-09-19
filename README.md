@@ -1,3 +1,6 @@
+![Algo Guide](https://user-images.githubusercontent.com/86681482/191082890-0d3c9469-c8c4-46ab-9eec-d48b6b81c7b9.gif)
+
+
 # Algo_Guide
 Android application to visualize algorithms
 
