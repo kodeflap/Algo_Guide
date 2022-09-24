@@ -56,8 +56,7 @@ The Algo Guide is an algorithm visualizer app. The app includes algorithm concep
 - [x] Insertion sort
 - [x] Selection Sort
 - [x] Quick Sort
-- [ ] Selection sort
-- [ ] Bubble sort
+- [x] Bubble sort
 - [ ] Merge sort
 - [ ] Heap sort
 - [ ] Counting sort

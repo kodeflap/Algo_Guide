@@ -7,23 +7,35 @@ package com.dlight.algoguide.algorithms.sorting.quick_sort
  */
 class QuickSort {
     suspend fun quickSort(
-        arr: IntArray,
-    ) {
-        for (i in 1 until arr.size) {
-            var min = i
-            for (j in (i + 1) until arr.size) {
-                if (arr[j] < arr[min])
-                    min = j
-            }
-
-            sortSwap(arr, min, i)
-        }
+        arr: IntArray, left: Int, right: Int) {
+        val index = partition (arr, left, right)
+        if (left < index - 1)
+            quickSort(arr, left, index - 1)
+        if (index < right )
+            quickSort(arr, index, right)
     }
 
-    private fun sortSwap(arr: IntArray, min: Int, i: Int) {
+    private fun partition(arr: IntArray, left: Int, right: Int): Int {
+        var left = left
+        var right = right
+        /* Pivot point */
+        val pivot = arr[(left + right) / 2]
+        while (left <= right) {
+            while (arr[left] < pivot) left++
+            while (arr[right] > pivot) right--
+            if (left <= right) {
+                swap(arr, left, right)
+                left++
+                right--
+            }
+        }
+        return left
+    }
 
-        val temp = arr[min]
-        arr[min] = arr[i]
-        arr[i] = temp
+    private fun swap(arr: IntArray, left: Int, right: Int) {
+        val temp = arr [left]
+        arr[left] = arr[right]
+        arr[right] = temp
     }
 }
+
