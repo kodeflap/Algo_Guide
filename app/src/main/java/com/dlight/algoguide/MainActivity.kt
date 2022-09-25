@@ -13,7 +13,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.dlight.algoguide.algorithms.sorting.SortingViewModelProvider
 import com.dlight.algoguide.algorithms.sorting.Events
 import com.dlight.algoguide.algorithms.sorting.insertion_sort.InsertionSort
-import com.dlight.algoguide.algorithms.sorting.insertion_sort.InsertionSortViewModel
+import com.dlight.algoguide.algorithms.sorting.SortViewModel
 import com.dlight.algoguide.algorithms.sorting.composables.VisualizerBottomBar
 import com.dlight.algoguide.algorithms.sorting.composables.VisualizerSection
 import com.dlight.algoguide.ui.theme.AlgoGuideTheme
@@ -25,10 +25,10 @@ import com.dlight.algoguide.ui.theme.AlgoGuideTheme
  */
 class MainActivity : ComponentActivity() {
 
-    private val viewModel: InsertionSortViewModel by lazy {
+    private val viewModel: SortViewModel by lazy {
         val viewModelProviderFactory = SortingViewModelProvider(InsertionSort())
         ViewModelProvider(this, viewModelProviderFactory)[
-                InsertionSortViewModel::class.java]
+                SortViewModel::class.java]
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

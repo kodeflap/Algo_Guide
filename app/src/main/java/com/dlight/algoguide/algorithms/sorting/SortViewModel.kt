@@ -1,13 +1,13 @@
-package com.dlight.algoguide.algorithms.sorting.insertion_sort
+package com.dlight.algoguide.algorithms.sorting
 
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.dlight.algoguide.algorithms.sorting.Events
+import com.dlight.algoguide.algorithms.sorting.insertion_sort.InsertionSort
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-class InsertionSortViewModel(
+class SortViewModel(
     private val insertionSort: InsertionSort
 ) : ViewModel() {
 
