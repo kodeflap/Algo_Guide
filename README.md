@@ -93,18 +93,7 @@ Contributions are what make the open-source project amazing. Which helps to lear
 
 If you have any suggestion or found any issues please free to put your suggestion.
 
-1. Fork the repo
-
-2. Clone the repo
-
-3. Create your branch check out to your branch (git checkout -b)
-Suggested naming **name/ updation name
-
-3. Commit your changes(git commit -m "updation name")
-
-4. Push to branch(git push origin updation/updation_name)
-
-5. Open pull request
+If you like to contribute to the project you can check the [CONTRIBUTING.md](https://github.com/kodeflap/Algo_Guide/blob/master/CONTRIBUTING.md) to know how to contribute to the projet.
 
 That's all
 
