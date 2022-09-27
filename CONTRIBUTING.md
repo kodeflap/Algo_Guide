@@ -33,14 +33,19 @@ To send us a pull request, please:
 2. Modify the source; please focus on the specific change you are contributing. If you also reformat all the code, it will be hard for us to focus on your change.
 3. Ensure local tests pass.
 4. Commit to your fork using clear commit messages.
-5. Send us a pull request,
+5. Send us a pull request
+
+### How to add new features
+
+1. Add package name for the feature
+2. If sub features are there create seperate package for it 
+3. Add class to it
 
 GitHub provides additional document on [forking a repository](https://help.github.com/articles/fork-a-repo/) and 
 [creating a pull request](https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request/).
 
 ## Finding contributions to work on
-Looking at the existing issues is a great way to find something to contribute on. As our projects, by default, use the default GitHub issue labels ((enhancement/bug/duplicate/help wanted/invalid/question/wontfix), looking at any ['help wanted'](https://github.com/amzn/drs-sample-android-app/labels/help%20wanted) issues is a great place to start. 
-
+Looking at the existing issues is a great way to find something to contribute on. As our projects, by default, use the default GitHub issue labels ((enhancement/bug/duplicate/help wanted/invalid/question/wontfix) and also some additional labels((designing,todo,hacktoberfest,fix,documentation)
 
 ## Code of Conduct
 For more information see the [Code of Conduct FAQ](https://github.com/kodeflap/Algo_Guide/blob/master/CODE_OF_CONDUCT.md) 
