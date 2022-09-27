@@ -14,7 +14,7 @@
 
 # About
 
-The Algo Guide is an algorithm visualizer app. The app includes algorithm concepts and uses simple visual elements like charts, and other visual elements to simplify the understanding of the working of each algorithm like searching, sorting, etc. The app will also be included with code simultaneously to understand the concepts.
+The Algo Guide is an educative android app for studying data structures and algorithms. The app includes algorithm concepts and uses simple visual elements like charts, and other visual elements to simplify the understanding of the working of each algorithm like searching, sorting, etc. The app will also be included with code simultaneously to understand the concepts.
 
 # General Info
 
@@ -53,6 +53,13 @@ The Algo Guide is an algorithm visualizer app. The app includes algorithm concep
 
 ## 📝To do
 
+1. Building UI design
+
+- [] Creating different UI design for application
+Currently in progress.........
+
+2. Adding different Algorithm in sorting section
+
 - [x] Insertion sort
 - [x] Selection Sort
 - [x] Quick Sort
@@ -62,6 +69,9 @@ The Algo Guide is an algorithm visualizer app. The app includes algorithm concep
 - [ ] Counting sort
 - [ ] Radix sort
 - [ ] Bucket sort
+
+2. Adding Test Cases
+
 
 # Getting Started
 
@@ -92,6 +102,8 @@ Contributions are always welcome!
 Contributions are what make the open-source project amazing. Which helps to learn, inspire, and found new modes in the development phase of a coder. Any contribution to this project is greatly appreciated. It is an initial level project in building phase so you can also be in it.
 
 If you have any suggestion or found any issues please free to put your suggestion.
+
+### If you want to contribute in inital stage please you can do To Do section check out where your helps are needed
 
 If you like to contribute to the project you can check the [CONTRIBUTING.md](https://github.com/kodeflap/Algo_Guide/blob/master/CONTRIBUTING.md) to know how to contribute to the projet.
 
