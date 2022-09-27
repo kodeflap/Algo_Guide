@@ -3,7 +3,7 @@
 <p align = "center">
       <img src = "https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github" height = 25/>
       <a href= "https://github.com/kodeflap/Algo_Guide/tags ">
-      <img src = "https://img.shields.io/github/release/kodeFlap/Algo_Guide.svg" height = 25/></a>
+      <!-- <img src = "https://img.shields.io/github/release/kodeFlap/Algo_Guide.svg" height = 25/></a> -->
       <a href= "https://github.com/kodeflap/Algo_Guide/blob/master/LICENSE ">
       <img src = "https://img.shields.io/github/license/kodeFlap/Algo_Guide.svg" height = 25/></a>
       <img src = "https://img.shields.io/github/contributors/kodeFlap/Algo_Guide.svg" height = 25/></a>
