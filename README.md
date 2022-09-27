@@ -103,7 +103,9 @@ Contributions are what make the open-source project amazing. Which helps to lear
 
 If you have any suggestion or found any issues please free to put your suggestion.
 
-### If you want to contribute in inital stage please you can do To Do section check out where your helps are needed
+
+#### If you want to contribute in inital stage please check the [milestone](https://github.com/kodeflap/Algo_Guide/milestones) where you can work and if you want to work on please open a issue 
+
 
 If you like to contribute to the project you can check the [CONTRIBUTING.md](https://github.com/kodeflap/Algo_Guide/blob/master/CONTRIBUTING.md) to know how to contribute to the projet.
 
