@@ -55,7 +55,7 @@ The Algo Guide is an educative android app for studying data structures and algo
 
 1. Building UI design
 
-- [] Creating different UI design for application
+- [ ] Creating different UI design for application
 Currently in progress.........
 
 2. Adding different Algorithm in sorting section
