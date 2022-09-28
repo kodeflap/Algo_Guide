@@ -16,21 +16,21 @@ class SortViewModel(
             345, 167, 188, 276, 123, 375, 180, 120,240, 37, 173, 156
         )
     )
-    val insertionSortingStart = mutableStateOf(false)
-    val insertionSortFinish = mutableStateOf(false)
+    val sortingStart = mutableStateOf(false)
+    val sortFinish = mutableStateOf(false)
     private var sortDelay = 300L
     private var pause = false
     private var next = 1
     private var previous = 0
 
-    private var insertionSortLevels = mutableListOf<List<Int>>()
+    private var sortLevels = mutableListOf<List<Int>>()
 
     init {
         viewModelScope.launch {
             insertionSort.insertionSort(
                 arr.value.clone()
             ) { modifyArray ->
-                insertionSortLevels.add(modifyArray.toMutableList())
+                sortLevels.add(modifyArray.toMutableList())
             }
         }
     }
@@ -57,8 +57,8 @@ class SortViewModel(
     }
 
     private fun nexts() {
-        if (next < insertionSortLevels.size) {
-            arr.value = insertionSortLevels[next].toIntArray()
+        if (next < sortLevels.size) {
+            arr.value = sortLevels[next].toIntArray()
             next++
             previous++
         }
@@ -66,7 +66,7 @@ class SortViewModel(
 
     private fun previouss() {
         if (previous >= 0) {
-            arr.value = insertionSortLevels[previous].toIntArray()
+            arr.value = sortLevels[previous].toIntArray()
             next--
             previous--
 
@@ -85,7 +85,7 @@ class SortViewModel(
 
     private fun playPauseAlgorithm() {
 
-        if (insertionSortingStart.value)
+        if (sortingStart.value)
             pause()
         else
             play()
@@ -96,10 +96,10 @@ class SortViewModel(
     private fun play() = viewModelScope.launch{
 
         pause = false
-        for (i in sortingState until insertionSortLevels.size) {
+        for (i in sortingState until sortLevels.size) {
             if (!pause) {
                 delay(sortDelay)
-                arr.value = insertionSortLevels[i].toIntArray()
+                arr.value = sortLevels[i].toIntArray()
             } else {
                 sortingState = i
                 next = i + 1
@@ -108,7 +108,7 @@ class SortViewModel(
             }
         }
 
-        insertionSortFinish.value = true
+        sortFinish.value = true
     }
 
     private fun pause() {

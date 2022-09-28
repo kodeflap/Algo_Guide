@@ -48,8 +48,8 @@ class MainActivity : ComponentActivity() {
                             modifier = Modifier
                         )
 
-                        val isPlaying = viewModel.insertionSortingStart.value
-                        val isFinished = viewModel.insertionSortFinish.value
+                        val isPlaying = viewModel.sortingStart.value
+                        val isFinished = viewModel.sortFinish.value
 
                         VisualizerBottomBar(
                             playPauseClick = { viewModel.onEvent(Events.playPause) },
