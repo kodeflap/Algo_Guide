@@ -65,7 +65,7 @@ Currently in progress.........
 - [x] Quick Sort
 - [x] Bubble sort
 - [x] Merge sort
-- [ ] Heap sort
+- [x] Heap sort
 - [ ] Counting sort
 - [ ] Radix sort
 - [ ] Bucket sort
