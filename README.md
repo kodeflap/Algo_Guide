@@ -115,6 +115,7 @@ That's all
 
 The project has also discussion section you can discuss an issue or can share your ideas. Let's make it as great
 
+Also check out the [discord](https://discord.gg/8zdFPzQh) to disucuss
 
 # License
 
