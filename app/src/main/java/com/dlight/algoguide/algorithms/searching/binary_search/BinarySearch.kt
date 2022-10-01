@@ -1,7 +1,19 @@
 package com.dlight.algoguide.algorithms.searching.binary_search
 
+/**
+ * BinarySearch
+ *
+ * A class carrying functionality to perform binary search
+ *
+ * @constructor Creates an instance of the BinarySearch class
+ */
 class BinarySearch {
-    // Returns the index of the target value or -1, if the value does not exist in the given array
+    /**
+     * Function to perform binary search
+     * @param arr Integer array on which binary search is to be performed
+     * @param target Value to be searched in the given array
+     * @return index of the target value in the given array, or -1 if it isn't found
+     */
     suspend fun binarySearch(arr: IntArray, target: Int) : Int {
         // Initially setting l to the start of the array and r to the end of the array
         var l = 0
