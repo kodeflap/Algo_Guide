@@ -24,54 +24,92 @@ The Algo Guide is an educative android app for studying data structures and algo
 - Making user interface using Jetpack Compose
 - Implementing ViewModel concepts
 
-# Features
-
-- Animations
-- Embedded Code
-- Adding Elements
-- Controlling Algorithm playback and stop and speed
-- Deletion of elements
-
-# Technologies Used
-
-- Kotlin
-- Clean Architecture
-
-# Libraries
-
-- Jetpack Compose
-- Material Designs
-
-# Demo of Working section
-
-[![video]()](https://user-images.githubusercontent.com/86681482/190232283-341e0b91-ee90-4af8-894d-78208aae3a22.mp4)
-
 
 # Project Status
 
-🚧🚧 Project is: In progress. Implemented some features and functionalities.
+🚧🚧 Project is: In progress. check out the progress
 
-## 📝To do
 
-1. Building UI design
+## Tech stack
 
-- [ ] Creating different UI design for application
-Currently in progress.........
+<table>
+  <tr>
+     <td>Mobile OS</td>
+     <td>Android</td>
+  </tr>
+   <tr>
+     <td>Architecture</td>
+     <td>Clean Architecture</td>
+  </tr>
+  <tr>
+     <td>Programming Language</td>
+     <td>Kotlin</td>
+  </tr>
+  <tr>
+     <td>Database</td>
+     <td>Room</td>
+  </tr>
+    <tr>
+     <td>API</td>
+     <td>DSA API</td>
+  </tr>
+   <tr>
+    <td>UI Framework</td>
+    <td>Jetpack compose</td>
+   </tr>
+   <tr>
+    <td>Push Notification</td>
+    <td>Firebase</td>
+  </tr>
+</table>
 
-2. Adding different Algorithm in sorting section
+## Feature List
 
-- [x] Insertion sort
-- [x] Selection Sort
-- [x] Quick Sort
-- [x] Bubble sort
-- [x] Merge sort
-- [x] Heap sort
-- [ ] Counting sort
-- [ ] Radix sort
-- [ ] Bucket sort
+- Offline access to lesson
+- Track lessen progress
+- Daily Goal setting and updating
+- Daily remainder setting and updating
+- Streak Count
+- Showing topic covered count
+- Showing lessen covered count
+- Showing new notification
+- Daily goal reached or not progress
 
-2. Adding Test Cases
+## Wireframe
 
+The wireframes are designed using figma. You can view the wireframe by clicking [here](https://www.figma.com/file/hMSxpTN6UzOrkMeWLa5ofY/Algo-Guide-(Copy)?node-id=0%3A1)
+
+## Colors
+
+<table>
+<tr>
+      <td bgcolor="#17A1FA"> #17A1FA </td>
+      <td bgcolor="#02F054"> #02F054 </td>
+      <td bgcolor="#C7D909"> #C7D909 </td>
+      <td bgcolor="#F09A02"> #F09A02 </td>
+      <td bgcolor="#E61902"> #E61902 </td>
+</tr>
+</table>
+
+## Typography
+
+- Poppins
+- Roboto
+
+## Prototype
+
+For getting details about prototype check out [here](https://www.figma.com/file/hMSxpTN6UzOrkMeWLa5ofY/Algo-Guide-(Copy)?node-id=128%3A98)
+
+## Structure the app course
+
+
+## To Do
+
+- [ ] API Development
+- [ ] Designing using jetpack compose
+- [ ] Ds And Algorithm codes - Progress
+- [ ] Development
+- [ ] Unit Testing
 
 # Getting Started
 
