@@ -10,12 +10,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModelProvider
-import com.dlight.algoguide.algorithms.sorting.SortingViewModelProvider
-import com.dlight.algoguide.algorithms.sorting.Events
-import com.dlight.algoguide.algorithms.sorting.insertion_sort.InsertionSort
-import com.dlight.algoguide.algorithms.sorting.SortViewModel
-import com.dlight.algoguide.algorithms.sorting.composables.VisualizerBottomBar
-import com.dlight.algoguide.algorithms.sorting.composables.VisualizerSection
+import com.dlight.algoguide.dsa.sorting.SortingViewModelProvider
+import com.dlight.algoguide.dsa.sorting.Events
+import com.dlight.algoguide.dsa.sorting.insertion_sort.InsertionSort
+import com.dlight.algoguide.dsa.sorting.SortViewModel
+import com.dlight.algoguide.dsa.sorting.composables.VisualizerBottomBar
+import com.dlight.algoguide.dsa.sorting.composables.VisualizerSection
 import com.dlight.algoguide.ui.theme.AlgoGuideTheme
 
 /**
