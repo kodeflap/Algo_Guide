@@ -107,7 +107,7 @@ For getting details about prototype check out [here](https://www.figma.com/file/
 
 - [ ] API Development
 - [ ] Designing using jetpack compose
-- [ ] Ds And Algorithm codes - Progress
+- [ ] Ds And Algorithm codes - Check out the [ToDo.md](https://github.com/kodeflap/Algo_Guide/blob/master/ToDo.md)
 - [ ] Development
 - [ ] Unit Testing
 
