@@ -6,11 +6,11 @@ If it needs additional concepts you can create subsequent packages and create ko
 - [ ] Array
 
 ## Linked list
-- [ ] circular linked list
-- [ ] doubly linked list
+- [x] circular linked list
+- [x] doubly linked list
 
 ## Stack
-- [ ] Stack
+- [x] Stack
 
 ## Dynamic Programming
 - [ ] Dynamic Programming
