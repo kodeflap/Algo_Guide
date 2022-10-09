@@ -1,51 +1,10 @@
 
-name: Bug
-description: File a bug report
-title: "[Bug]:"
+name: Issue
+description: File a issue here
+title: "[BUG]: "
+labels: ["bug"]
+assignees: 
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Before opening a bug report, please search for the behaviour in the existing issues. 
-        
-        ---
-        
-        Thank you for taking the time to file a bug report. To address this bug as fast as possible, we need some information.
-  - type: input
-    id: os
-    attributes:
-      label: Operating system
-      description: "Which operating system do you use? Please provide the version as well."
-      placeholder: "macOS Big Sur 11.5.2"
-    validations:
-      required: true  
-  - type: input
-    id: laravel
-    attributes:
-      label: Laravel Version
-      description: "Please provide the full Laravel version of your project."
-      placeholder: "v8.6.1"
-    validations:
-      required: true
-  - type: input
-    id: php
-    attributes:
-      label: PHP Version
-      description: "Please provide the full PHP version that is powering Tinkerwell."
-      placeholder: "PHP 8.0.7, built: Jun  4 2021 01:50:04"
-    validations:
-      required: true
-  - type: dropdown
-    id: location
-    attributes:
-      label: Project Location
-      description: Where is the project located?
-      options:
-        - Local
-        - Remote
-        - Somewhere else (please specify in the description!)
-    validations:
-      required: true
   - type: textarea
     id: bug-description
     attributes:
