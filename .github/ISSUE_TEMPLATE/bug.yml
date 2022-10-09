@@ -3,7 +3,6 @@ name: Issue
 description: File a issue here
 title: "[BUG]: "
 labels: ["bug"]
-assignees: 
 body:
   - type: textarea
     id: bug-description
