@@ -28,6 +28,7 @@ If it needs additional concepts you can create subsequent packages and create ko
 
 ## Tree
 - [ ] AVL Tree
-- [ ] Binary Search Tree
-- [ ] Heap
-- [ ] Tries
+- [X] Binary Search Tree
+- [x] Binary Tree
+- [x] Heap
+- [x] Tries
