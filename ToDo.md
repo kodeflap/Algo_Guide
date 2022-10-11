@@ -21,7 +21,7 @@ If it needs additional concepts you can create subsequent packages and create ko
 - [ ] Prims Algorithm
 
 ## Hashing
-- [ ] Hashing
+- [x] Hashing
 
 ## Recursion
 - [ ] Recursion
@@ -32,3 +32,5 @@ If it needs additional concepts you can create subsequent packages and create ko
 - [x] Binary Tree
 - [x] Heap
 - [x] Tries
+
+ 
