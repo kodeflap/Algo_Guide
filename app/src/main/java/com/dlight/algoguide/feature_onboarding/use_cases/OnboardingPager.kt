@@ -65,17 +65,13 @@ fun OnboardingPager(
                     )
                 }
             }
-
-//            PagerIndicator(
-//                item.size,
-//                pagerState.currentPage
-//            )
+            PagerIndicator(item.size, pagerState.currentPage)
         }
         Box(modifier = Modifier.align(Alignment.BottomCenter)) {
-     //       BottomSection(pagerState.currentPage)
+            BottomSection(pagerState.currentPage)
         }
     }
-
+}
     @ExperimentalPagerApi
     @Composable
     fun RememberPagerState(
@@ -95,18 +91,6 @@ fun OnboardingPager(
     }
 
     @Composable
-    fun PagerIndicator(size: Int, currentPage: Int) {
-        Row(
-            horizontalArrangement = Arrangement.SpaceBetween,
-            modifier = Modifier.padding(top = 60.dp)
-        ) {
-            repeat(size) {
-             //   Indicator(isSelected = it == currentPage)
-            }
-        }
-    }
-
-    @Composable
     fun Indicator(isSelected: Boolean) {
         val width = animateDpAsState(targetValue = if (isSelected) 25.dp else 10.dp)
         Box(
@@ -121,49 +105,60 @@ fun OnboardingPager(
         )
     }
 
-    @Composable
-    fun Bottomsection(currentPager: Int) {
-        Row(
-            modifier = Modifier
-                .padding(bottom = 20.dp)
-                .fillMaxWidth(),
-            horizontalArrangement = if (currentPager != 2) Arrangement.SpaceBetween else Arrangement.Center
-        ) {
-            if (currentPager == 2) {
-                OutlinedButton(
-                    onClick = { /*TODO*/ },
-                    shape = RoundedCornerShape(50)
-                ) {
-                    Text(
-                        text = "Get Started",
-                        modifier = Modifier.padding(vertical = 8.dp, horizontal = 40.dp),
-                        color = Color.Black
-                    )
-                }
-            } else {
-//                SkipNextButton(
-//                    "Skip", Modifier
-//                        .padding(start = 20.dp)
-//                )
-//                SkipNextButton(
-//                    "Next", Modifier
-//                        .padding(end = 20.dp)
-//                )
-            }
-        }
+@Composable
+fun SkipNextButton(
+    text: String,
+    modifier: Modifier
+) {
+    Text(
+        text = text,
+        color = Color.Black,
+        modifier = modifier,
+        fontSize = 18.sp,
+        fontWeight = FontWeight.Medium
+    )
+}
 
-        @Composable
-        fun SkipNextButton(
-            text: String,
-            modifier: Modifier
-        ) {
-            Text(
-                text = text,
-                color = Color.Black,
-                modifier = modifier,
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Medium
+@Composable
+fun BottomSection(currentPager: Int) {
+    Row(
+        modifier = Modifier
+            .padding(bottom = 20.dp)
+            .fillMaxWidth(),
+        horizontalArrangement = if (currentPager != 2) Arrangement.SpaceBetween else Arrangement.Center
+    ) {
+        if (currentPager == 2) {
+            OutlinedButton(
+                onClick = { /*TODO*/ },
+                shape = RoundedCornerShape(50)
+            ) {
+                Text(
+                    text = "Get Started",
+                    modifier = Modifier.padding(vertical = 8.dp, horizontal = 40.dp),
+                    color = Color.Black
+                )
+            }
+        } else {
+            SkipNextButton(
+                "Skip", Modifier
+                    .padding(start = 20.dp)
             )
+            SkipNextButton(
+                "Next", Modifier
+                    .padding(end = 20.dp)
+            )
+        }
+    }
+}
+
+@Composable
+fun PagerIndicator(size: Int, currentPage: Int) {
+    Row(
+        horizontalArrangement = Arrangement.SpaceBetween,
+        modifier = Modifier.padding(top = 60.dp)
+    ) {
+        repeat(size) {
+            Indicator(isSelected = it == currentPage)
         }
     }
 }
