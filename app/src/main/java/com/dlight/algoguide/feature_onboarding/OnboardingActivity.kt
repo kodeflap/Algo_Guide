@@ -3,12 +3,14 @@ package com.dlight.algoguide.feature_onboarding
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModelProvider
 import com.dlight.algoguide.composables.onboarding_screen.OnboardingPager
@@ -45,27 +47,27 @@ class OnboardingActivity : ComponentActivity() {
 
                 //onBoarding screen
                 val items = ArrayList<OnboardingData>()
-//                items.add(
-//                    OnboardingData(
-//                        R.drawable.ic_pause,
-//                        "Easy Algo Guides",
-//                        "We have number of algorithm concepts"
-//                    )
-//                )
-//                items.add(
-//                    OnboardingData(
-//                        R.drawable.ic_pause,
-//                        "Easy Algo Guides",
-//                        "We have number of algorithm concepts"
-//                    )
-//                )
-//                items.add(
-//                    OnboardingData(
-//                        R.drawable.ic_pause,
-//                        "Easy Algo Guides",
-//                        "We have number of algorithm concepts"
-//                    )
-//                )
+                items.add(
+                    OnboardingData(
+                        123,
+                        "Easy Algo Guides",
+                        "We have number of algorithm concepts"
+                    )
+                )
+                items.add(
+                    OnboardingData(
+                        123,
+                        "Easy Algo Guides",
+                        "We have number of algorithm concepts"
+                    )
+                )
+                items.add(
+                    OnboardingData(
+                        123,
+                        "Easy Algo Guides",
+                        "We have number of algorithm concepts"
+                    )
+                )
 
                 val pagerState = rememberPagerState(
                     pageCount = items.size,
