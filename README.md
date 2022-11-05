@@ -137,8 +137,7 @@ So let's get started.
 ## Contributing
 
 Contributions are always welcome!
-Contributions are what make the open-source project amazing. Which helps to learn, inspire, and found new modes in the development phase of a coder. Any contribution to this project is greatly appreciated. It is an initial level project in building phase so you can also be in it.
-
+Contributions are what make the open-source project amazing. Which helps to learn, inspire, and found new modes in the development phase of a coder. Any contribution to this project is greatly appreciated.
 If you have any suggestion or found any issues please free to put your suggestion.
 
 If you want to get resources to help in contributing for the main theme check out the [resources for data structure and algorithm](https://github.com/kodeflap/Algo_Guide/blob/master/README.md) and implement in kotlin.
