@@ -1,4 +1,4 @@
 package com.dlight.algoguide.feature_onboarding.data
 
-data class OnboardingData(val image: Int, val  title: String, val description: String) {
+data class OnboardingData(val  title: String, val description: String) {
 }

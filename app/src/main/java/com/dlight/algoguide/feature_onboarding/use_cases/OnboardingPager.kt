@@ -44,13 +44,13 @@ fun OnboardingPager(
                         .fillMaxWidth(),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    Image(
-                        painter = painterResource(id = item[page].image),
-                        contentDescription = item[page].title,
-                        modifier = Modifier
-                            .height(250.dp)
-                            .fillMaxWidth()
-                    )
+//                    Image(
+//                       // painter = painterResource(id = item[page].image),
+//                        contentDescription = item[page].title,
+//                        modifier = Modifier
+//                            .height(250.dp)
+//                            .fillMaxWidth()
+//                    )
                     Text(
                         text = item[page].title,
                         modifier = Modifier.padding(top = 50.dp),
