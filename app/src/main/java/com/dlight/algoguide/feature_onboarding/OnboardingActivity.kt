@@ -1,4 +1,4 @@
-package com.dlight.algoguide.feature_onboarding
+package com.dlight.algoguide
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

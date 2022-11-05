@@ -1,22 +1,18 @@
-package com.dlight.algoguide.dsa.sorting.merge_sort
-/**
- * Insertion sort
- *
- * @constructor Create empty Insertion sort
- */
+package com.dlight.algoguide.algorithms.sorting.merge_sort
+
 class MergeSort {
     suspend fun mergeSort(
         arr: List<Int>
     ): List<Int> {
-        /*Function which returns an int array 
-        Calculating the mid point 
+        /*Function which returns an int array
+        Calculating the mid point
         left of the array
         and right of the array
          */
         val middle = arr.size / 2
         var left = arr.subList(0, middle)
         var right = arr.subList(middle, arr.size)
-    /*Calling merge function recursively to merge the array */
+
         return merge(mergeSort(left), mergeSort(right))
     }
 
@@ -37,16 +33,17 @@ class MergeSort {
         }
         /*If any element left in the array belonging to either right or left side of array then
         insert into the array */
-        //THIS THE LEFT SIDE        
+        //THIS THE LEFT SIDE
         while (indexLeft < left.size) {
             newList.add(left[indexLeft])
             indexLeft++
         }
-        //THIS IS THE RIGHT SIDE OF THE ARRAY
+
         while (indexRight < right.size) {
             newList.add(right[indexRight])
             indexRight++
         }
+
         return newList
     }
 }
