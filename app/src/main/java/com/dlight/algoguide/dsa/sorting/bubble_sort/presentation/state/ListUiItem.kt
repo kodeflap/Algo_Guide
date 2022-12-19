@@ -1,4 +1,4 @@
-package com.dlight.algoguide.dsa.sorting.bubble_sort.state
+package com.dlight.algoguide.dsa.sorting.bubble_sort.presentation.state
 
 import androidx.compose.ui.graphics.Color
 
